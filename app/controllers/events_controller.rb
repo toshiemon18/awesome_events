@@ -32,6 +32,13 @@ class EventsController < ApplicationController
     end
   end
 
+  def destroy
+    @event = current_user.created_events.find(params[:id])
+    event_name = @event.name
+    @event.destroy!
+    redirect_to root_path, notice: "イベント #{event_name} を削除しました"
+  end
+
   private 
   
   def event_params
