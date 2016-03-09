@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # 追加したGem -----
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'kaminari'
+gem 'kaminari-bootstrap'
 # -----------------
 
 # Use ActiveModel has_secure_password
