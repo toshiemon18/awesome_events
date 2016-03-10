@@ -30,6 +30,7 @@ gem 'kaminari'
 gem 'kaminari-bootstrap'
 gem 'ransack',  github: 'activerecord-hackery/ransack', branch: 'rails-4.2'
 gem 'carrierwave'
+gem 'mini_magick'
 # -----------------
 
 # Use ActiveModel has_secure_password
