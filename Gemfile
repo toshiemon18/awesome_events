@@ -45,12 +45,22 @@ gem 'mini_magick'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  gem 'rspec-rails', github: 'rspec/rspec-rails'
+  gem 'rspec-core', github: 'rspec/rspec-core'
+  gem 'rspec-expectations', github: 'rspec/rspec-expectations'
+  gem 'rspec-mocks', github: 'rspec/rspec-mocks'
+  gem 'rspec-support', github: 'rspec/rspec-support'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 2.6.0'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
+  gem 'factory_girl_rails', '~> 4.4.1'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
